@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Player</h1>
+        <div class="table">
+            <tr>
+              <th>Name : </th>
+              <td th:text="${player.name}"></td>
+            </tr>
+            <tr>
+                <th>Age : </th>
+                <td th:text="${player.age}"></td>
+            </tr>
+            <tr>
+                <th>Username : </th>
+                <td th:text="${player.username}"></td>
+            </tr>
+            <tr>
+                <th>Team : </th>
+                <td th:text="${player.team.name}"></td>
+            </tr>
+        </div>
+    </div>
+</body>
+</html>
